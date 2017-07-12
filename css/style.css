@@ -1,0 +1,509 @@
+@font-face {
+  font-family: 'Hensa';
+  src: url(../fonts/Hensa.otf);
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+}
+body {
+	font-family: 'Muli', helvetica, sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.cf {
+	clear: both;
+}
+
+.main-head {
+	/*padding: 0.5em 0 0.5em 0;*/
+	width: 100%;
+	position: fixed;
+	background-color: #008cba;
+	color: white;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.cover {
+	height: 50em;
+	padding-top: 1em;
+	background: url(../img/back1.png) no-repeat center;
+}
+
+
+/*Arreglos bootstrap navigation*/
+#main-navbar-toggle {
+	float: none;
+	margin: 0 auto;
+	font-size: 1.2em;
+	color: #FFF;
+}
+/*General Styles*/
+fieldset.border-section {
+	border: 2px solid #e2b75a;
+	width: 90%;
+	margin: 0 auto;
+	padding: 2%;
+}
+
+fieldset.border-section .border-section-legend{
+	font-size: 3.5em;
+	width: 50%;
+	font-family: Hensa;
+	color: #df99ab;
+	text-align: center;
+}
+
+fieldset.border-section p {
+	padding: 1%; 
+	font-family: 'Inconsolata', monospace;
+	color: #030E45;
+}
+
+.btn-style-1 {
+	border-radius: 5px;
+	background: #df99ab;
+	padding: 0.5em;
+	color: #FFF;
+	font-family: 'Inconsolata', monospace;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-style-1:hover {
+	background: #F2A6BA;
+}
+
+.btn-style-1:hover, .btn-style-1:focus, .btn-style-1:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+/**/
+/*Navegacion en Fieldset*/
+#fieldset-nav fieldset{
+	height: 49em;
+	border-color: #fff;
+	border-bottom: none !important;
+}
+
+#main-nav li a{
+	color: #FFF;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+#main-nav li{
+	width: 24% !important;
+	text-align: center;
+	border-bottom: 2px solid transparent;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+
+#main-nav li:hover, .main-nav li:focus, .main-nav li:visited{
+	/*background-color: rgba(50,50,50,0.8);*/
+	border-bottom: 2px solid #FFF;
+}
+
+#main-nav li a, #main-nav li a:hover, .main-nav li a:focus, .main-nav li a:visited{
+	color: #FFF !important;
+	background-color: transparent;
+}
+/**/
+
+/*Cover Section*/
+#cover-signature{
+	width: 50%;
+	float: right;
+	margin-right: 1em;
+	min-width: 160px;
+	margin-top: 3em;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+/**/
+
+/*Cover Section*/
+#about-me{
+	position: relative;
+	padding: 10%;
+}
+
+#about-profile-img {
+	background: url(../img/sobre-mi.jpg) no-repeat center center;
+    border-radius: 170px;
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    top: -70px;
+    left: -122px;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+#about-me-fieldset {
+	position: relative;
+
+}
+
+#welcome-text {
+	width: 85%;
+	margin: 0 0 2em 0;
+    float: right;
+    text-align: justify;
+}
+
+#about-icons {
+	width: 200px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#about-icons li {
+	margin: 0 0.4em;
+	width: 13%;
+}
+
+#about-icons li img{
+	width: 100%;
+	float: left;
+}
+
+/**/
+
+/*Curriculum*/
+#cv {
+	text-align: center;
+	margin-bottom: 5em;
+}
+
+#cv article{
+	margin-bottom: 2em;
+}
+
+#cv h2{
+	margin-bottom: 1em;
+	font-family: 'Inconsolata', monospace;
+	color: #030E45;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+#cv h3{
+	font-family: 'Inconsolata', monospace;
+	color: #030E45;
+	font-weight: bold;
+}
+
+#cv p{
+	padding: 0;
+}
+
+/*End Curriculum*/
+
+/*Portfolio*/
+#portfolio {
+	margin-bottom: 5em;
+}
+
+#portfolio .btn-style-1 {
+	width: 200px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+#portfolio-gal {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    margin-bottom: 5em;
+}
+
+#portfolio-gal img{
+	display: block;
+	margin-bottom: 1em;
+	width: 100%;
+}
+/*End Portfolio*/
+
+/* Contact*/
+#contact {
+	margin-bottom: 5em;
+}
+
+#contact-form {
+
+}
+
+#contact-form-wrapper {
+	padding: 10%;
+}
+
+.control-label {
+	width: 100%;
+	margin-bottom: 1em;
+	font-family: 'Inconsolata', monospace;
+	color: #030E45;
+	font-weight: bold;
+	font-size: 1em;
+	text-align: center;
+}
+
+#form-submitted-correctly {
+    background-color: #fff;
+    z-index: -1;
+    display: none;
+    margin-bottom: 1em;
+	font-family: 'Inconsolata', monospace;
+	color: #030E45;
+	font-weight: bold;
+	font-size: 1em;
+	text-align: center;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+#form-submitted-correctly h2{
+	font-weight: 800;
+}
+
+#form-submitted-correctly h3{
+	font-size: 2em;
+}
+
+
+/*End Contact*/
+
+/*Social Icons*/
+#sIcons {
+	width: 219px;
+	display: block;
+	margin: 0 auto 1em;
+}
+
+#sIcons i {
+	width: 45px;
+    height: 45px;
+    border-radius: 60px;
+    float: left;
+    font-size: 1.2em;
+    color: #FFF;
+    background-color: #1d395d;
+    margin: 0.2em;
+    padding: 0.5em;
+    padding-top: 0.7em;
+    text-align: center;
+}
+
+#other-contact-info {
+	text-align: center;
+}
+
+/*End Social Icons*/
+
+
+/*Dots-nav*/
+#dot-nav-wrapper {
+	position: fixed;
+	top: 230px;
+	display: none;
+}
+
+.dotstyle ul {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	cursor: default;
+}
+
+.dotstyle li {
+	position: relative;
+	display: block;
+	margin: 16px 0;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+.dotstyle li a {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border-radius: 50%;
+	background-color: #df99ab;
+	background-color: rgba(223,153,171,0.3);
+	text-indent: -999em;
+	cursor: pointer; /* make the text accessible to screen readers */
+	position: absolute;
+}
+
+/* Fill up */
+.dotstyle-fillup li a {
+	overflow: hidden;
+	background-color: rgba(0,0,0,0);
+	box-shadow: inset 0 0 0 2px rgba(223,153,171,1);
+	transition: background 0.3s;
+}
+
+.dotstyle-fillup li a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	height: 0;
+	left: 0;
+	width: 100%;
+	background-color: #df99ab;
+	box-shadow: 0 0 1px #df99ab;
+	transition: height 0.3s;
+}
+
+.dotstyle-fillup li a:hover,
+.dotstyle-fillup li a:focus {
+	background-color: rgba(223,153,171,0.5);
+}
+
+.dotstyle-fillup li.current a::after {
+	height: 100%;
+}
+
+/*End Dots-nav*/
+
+
+/*Querys*/
+@media (max-width: 500px) {
+	#portfolio-gal {
+		-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    	-moz-column-count: 1; /* Firefox */
+    	column-count: 1;
+	}
+
+	fieldset.border-section {
+		padding: 4%;
+	}
+
+	#dot-nav-wrapper {
+	 	right: 25px;
+	}
+}
+
+
+@media (max-width: 767px) {
+	#main-navbar-toggle {
+		display: block;
+	}
+
+	#main-nav li{
+		width: 100% !important;
+		text-align: center;
+	}
+
+	#legend-container {
+		position: relative;
+	}
+
+	#collapse {
+		position: absolute;
+	}
+
+	#cover-signature{
+		margin-top: 11em;
+	}
+
+	fieldset.border-section .border-section-legend {
+	    font-size: 2.5em;
+	}
+}
+
+@media (max-width: 500px) {
+	fieldset.border-section .border-section-legend {
+	    font-size: 1.8em;
+	}
+}
+
+
+@media (max-width: 900px) {
+	#about-profile-img {
+	    position: initial;
+	    display: block;
+	    margin: 1.5em auto;
+	    width: 180px;
+    	height: 180px;
+	}
+	#welcome-text {
+	    width: 100%;
+	}
+}
+
+@media (min-width: 1300px) {
+	.cover {
+		background: url(../img/back3.jpg) no-repeat center;
+	}
+}
+
+@media (min-width: 1700px) {
+	.cover {
+		background: url(../img/back2.jpg) no-repeat center;
+	}
+}
+/*End Querys*/
+
+
+
+
+
